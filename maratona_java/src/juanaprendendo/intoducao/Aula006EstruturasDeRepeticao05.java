@@ -1,0 +1,14 @@
+package juanaprendendo.intoducao;
+
+public class Aula006EstruturasDeRepeticao05 {
+    static void main() {
+        double valorTotal=30000;
+        for (int parcela = (int)valorTotal; parcela>=1;parcela-- ){
+            double valorParcela = valorTotal/parcela;
+            if (valorParcela<1000){
+                continue;
+            }
+            IO.println("Parcela " + parcela + " R$ " + valorParcela);
+        }
+    }
+}
